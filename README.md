@@ -24,7 +24,7 @@ De interactieve animaties richten zich op een breed publiek, waaronder:
    - **Thema 3**: Lokale fauna.
    - **Thema 4**: Abstracte, rustgevende visuals.
    - **Thema 5**: Seizoensgebonden scènes.
-3. **Technologieën**: Ontwikkeld met moderne front-end frameworks en programmeertalen die interactieve grafische mogelijkheden bieden, zoals HTML5 Canvas en JavaScript.
+3. **Technologieën**: Het project maakt voornamelijk gebruik van [p5.js](https://p5js.org), een JavaScript-bibliotheek die ontworpen is om creatieve code en grafische toepassingen te vereenvoudigen.
 
 ## Installatie en Gebruiksaanwijzing
 1. Clone deze repository naar je lokale machine:
