@@ -30,3 +30,4 @@ De interactieve animaties richten zich op een breed publiek, waaronder:
 1. Clone deze repository naar je lokale machine:
    ```bash
    git clone https://github.com/gebruikersnaam/ziekenhuis-displays.git
+2. Open deze repository en open index.html.
