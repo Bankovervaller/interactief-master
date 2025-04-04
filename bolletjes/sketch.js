@@ -37,6 +37,7 @@ function touchMoved() {
   return false; // Voorkomt standaard scrollen bij touchscreens
 }
 
+// Class voor de bollen
 class Bol {
   constructor(x, y) {
     this.x = x;
@@ -44,6 +45,7 @@ class Bol {
     this.d = 30;
     this.vx = random(-2, 2);
     this.vy = random(-2, 2);
+    // Kleur voor de bolletjes
     this.kleur = color(random(100, 255), random(100, 255), random(100, 255), 180); // Random kleur
   }
 

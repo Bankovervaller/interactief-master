@@ -1,0 +1,155 @@
+/* animations.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app {
+    text-align: center;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+
+@keyframes starry-sky {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-1000px) rotate(360deg);
+    }
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    animation: starry-sky 5s infinite linear;
+}
+
+@keyframes bubbles {
+    0% {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-100px);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+}
+
+.bubble {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: bubbles 4s infinite ease-in-out;
+}
+
+@keyframes morphing {
+    0% {
+        background-color: #ff6b6b;
+        border-radius: 50%;
+    }
+    25% {
+        background-color: #6b9bff;
+        border-radius: 30%;
+    }
+    50% {
+        background-color: #3e6bff;
+        border-radius: 70%;
+    }
+    75% {
+        background-color: #6bff6b;
+        border-radius: 40%;
+    }
+    100% {
+        background-color: #ff6b6b;
+        border-radius: 50%;
+    }
+}
+
+.shape {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation: morphing 8s infinite ease-in-out;
+}
+
+/* Groei en Herstel */
+@keyframes growth {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.growth-effect {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #4caf50;
+    animation: growth 5s ease-in-out infinite;
+}
+
+/* Rustgevende Ademhaling */
+@keyframes breathing {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+}
+
+.breathing-circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ffa500;
+    animation: breathing 4s ease-in-out infinite;
+}
